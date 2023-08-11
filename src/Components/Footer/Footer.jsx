@@ -4,8 +4,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className=' m-16 relative mt-96'>
-            <p className='absolute bottom-0 bg-neutral-200 shadow-lg shadow-black w-full p-20 '>@Nazmul-2023</p>
+        <div className='ml-16 mr-16 mt-96 bottom-0'>
+            <p className=' bg-neutral-200 shadow-lg shadow-black w-full p-10 font-semibold font-serif'>@Nazmul-2023</p>
         </div>
     );
 };
