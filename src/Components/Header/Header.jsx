@@ -16,7 +16,7 @@ const Header = () => {
                 </span>
             </div>
             <div className={`md:flex md:static absolute gap-8 duration-700 ${open ? 'left-8':'-left-96'}`}>
-                <ActiveLink to="/home">Home</ActiveLink>
+                <ActiveLink to="/">Home</ActiveLink>
                 <ActiveLink to="/meals">Meals</ActiveLink>
                 <ActiveLink to="/about">About</ActiveLink>
                 <ActiveLink to="/contact">Contact</ActiveLink>

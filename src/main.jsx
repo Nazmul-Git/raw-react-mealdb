@@ -13,33 +13,35 @@ import AllMeals from './Components/AllMeals/AllMeals';
 import MealDetails from './Components/MealDetails/MealDetails';
 
 
+
 const router=createBrowserRouter([
   {
     path:'/',
     element:<Root></Root>,
     children:[
       {
-        path:'/home',
+        path:'/',
         element:<HomePage></HomePage>
       },
       {
-        path:'meals',
+        path:'/meals',
         element:<AllMeals></AllMeals>,
         loader:()=>fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=b')
       },
       {
-        path:'meals/:mealId',
+        path:'/meals/:mealId',
         element:<MealDetails></MealDetails>,
-        loader:({params})=>fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.mealId}`)
+        loader:({params})=>fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.mealId}`),
       },
       {
-        path:'about',
+        path:'/about',
         element:<About></About>
       },
       {
-        path:'contact',
+        path:'/contact',
         element:<Contact></Contact>
-      }
+      },
+      
       
     ]
   }
